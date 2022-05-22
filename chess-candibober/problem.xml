@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="8" short-name="chess-candibober-vp-1" url="https://polygon.codeforces.com/p7TGGPo/DrHykterstein/chess-candibober-vp-1">
+        
+    <names>
+                
+        <name language="russian" value="Кандибобер"/>
+            
+    </names>
+        
+    <statements>
+                
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+                
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/.html/russian/problem.html" type="text/html"/>
+                
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+            
+    </statements>
+        
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+                
+        <testset name="tests">
+                        
+            <time-limit>1000</time-limit>
+                        
+            <memory-limit>268435456</memory-limit>
+                        
+            <test-count>53</test-count>
+                        
+            <input-path-pattern>tests/%02d</input-path-pattern>
+                        
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+                        
+            <tests>
+                                
+                <test method="manual" points="0.0" sample="true"/>
+                                
+                <test method="manual" points="0.0" sample="true"/>
+                                
+                <test method="manual" points="0.0" sample="true"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test cmd="gen 10" method="generated" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test cmd="gen 15" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 46" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 66" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 494949" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 2223" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 1123123" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 50" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 100" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 99" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 37" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 100000000" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 1000000000" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 49" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 48490430" method="generated" points="2.0"/>
+                                
+                <test cmd="gen 999999999" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_1_slon 10" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_1_slon 30" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_1_slon 200" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_1_slon 99999999" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_1_kon 17" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_1_kon 100000" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_1_kon 64" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_1_kon 999999999" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_kon_slon_2 34" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_kon_slon_2 2" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_kon_slon_2 99" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_kon_slon_2 23" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_kon_slon_2 68" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_kon_slon_2 393903" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_kon_slon_2 100000000" method="generated" points="2.0"/>
+                                
+                <test cmd="gen_kon_slon_2 999999999" method="generated" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test method="manual" points="2.0"/>
+                                
+                <test cmd="gen_kon_slon_2 56132812" method="generated" points="2.0"/>
+                            
+            </tests>
+                    
+        </testset>
+            
+    </judging>
+        
+    <files>
+                
+        <resources>
+                        
+            <file path="files/olymp.sty"/>
+                        
+            <file path="files/problem.tex"/>
+                        
+            <file path="files/statements.ftl"/>
+                        
+            <file path="files/testlib.h" type="h.g++"/>
+                    
+        </resources>
+                
+        <executables>
+                        
+            <executable>
+                                
+                <source path="files/check.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/check.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/checker.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/checker.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/gen.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen_1_kon.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/gen_1_kon.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen_1_slon.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/gen_1_slon.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen_kon_slon_2.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/gen_kon_slon_2.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/validator.exe" type="exe.win32"/>
+                            
+            </executable>
+                    
+        </executables>
+            
+    </files>
+        
+    <assets>
+                
+        <checker type="testlib">
+                        
+            <source path="files/check.cpp" type="cpp.g++17"/>
+                        
+            <binary path="check.exe" type="exe.win32"/>
+                        
+            <copy path="check.cpp" type="cpp.g++17"/>
+                        
+            <testset>
+                                
+                <test-count>5</test-count>
+                                
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                                
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                                
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                                
+                <tests>
+                                        
+                    <test verdict="wrong-answer"/>
+                                        
+                    <test verdict="wrong-answer"/>
+                                        
+                    <test verdict="ok"/>
+                                        
+                    <test verdict="wrong-answer"/>
+                                        
+                    <test verdict="wrong-answer"/>
+                                    
+                </tests>
+                            
+            </testset>
+                    
+        </checker>
+                
+        <validators>
+                        
+            <validator>
+                                
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/validator.exe" type="exe.win32"/>
+                                
+                <testset>
+                                        
+                    <test-count>5</test-count>
+                                        
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                                        
+                    <tests>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                            
+                    </tests>
+                                    
+                </testset>
+                            
+            </validator>
+                    
+        </validators>
+                
+        <solutions>
+                        
+            <solution tag="wrong-answer">
+                                
+                <source path="solutions/big_wa.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/big_wa.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="accepted">
+                                
+                <source path="solutions/dvasilev_ok.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/dvasilev_ok.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="wrong-answer">
+                                
+                <source path="solutions/dvasilev_wa_black_white.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/dvasilev_wa_black_white.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="wrong-answer">
+                                
+                <source path="solutions/dvasilev_wa_bug.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/dvasilev_wa_bug.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="main">
+                                
+                <source path="solutions/solution_ac.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/solution_ac.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="accepted">
+                                
+                <source path="solutions/solution_ac_mip182.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/solution_ac_mip182.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="wrong-answer">
+                                
+                <source path="solutions/solution_bad.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/solution_bad.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/solution_wa-1.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/solution_wa-1.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/solution_wa_100_leq1.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/solution_wa_100_leq1.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/solution_wa__100.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/solution_wa__100.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="wrong-answer">
+                                
+                <source path="solutions/solution_wa_int.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/solution_wa_int.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/solution_wa_leq_1.cpp" type="cpp.g++14"/>
+                                
+                <binary path="solutions/solution_wa_leq_1.exe" type="exe.win32"/>
+                            
+            </solution>
+                    
+        </solutions>
+            
+    </assets>
+        
+    <properties>
+                
+        <property name="tests-wellformed" value="true"/>
+            
+    </properties>
+        
+    <stresses>
+                
+        <stress-count>0</stress-count>
+                
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+                
+        <list/>
+            
+    </stresses>
+    
+</problem>

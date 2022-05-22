@@ -1,0 +1,30 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Кандибобер</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Кандибобер</DIV><DIV class="time-limit"><DIV class="property-title">ограничение по времени на тест</DIV>1 секунда</DIV><DIV class="memory-limit"><DIV class="property-title">ограничение по памяти на тест</DIV>256 мегабайт</DIV><DIV class="input-file"><DIV class="property-title">ввод</DIV>стандартный ввод</DIV><DIV class="output-file"><DIV class="property-title">вывод</DIV>стандартный вывод</DIV></DIV><DIV class="legend"><P>Шахматная фигура <SPAN class="tex-font-style-bf">Кандибобер</SPAN>, ходит как конь, если она стоит на белой клетке, и как слон, если на черной.</P><P>У вас есть бесконечное шахматное поле. Вам известно что Кандибобер стоит на поле с координатами $$$(X_1, Y_1)$$$. Вам нужно за минимальное количество ходов можно попасть в клетку $$$(X_2, Y_2)$$$.</P><P>Клетка с координатами $$$(0, 0)$$$ - белая.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Входные данные</DIV><P></P><P>В первой строке даны четыре числа - $$$X_1, Y_1, X_2, Y_2$$$($$$-10^9 \leq X_1, Y_1, X_2, Y_2 \leq 10^9$$$).</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Выходные данные</DIV><P></P><P>В первой строке выведите единственное число M - минимальное число ходов. Далее в M строках выведите координаты клеток, на которые должен совершиться ход. Все координаты должны быть не более чем $$$2 \cdot 10^9$$$ по модулю. Гарантируется что оптимальное решение с такими координатами существует. Последней клеткой должна быть $$$(X_2, Y_2)$$$. Если попасть в данную клетку невозможно, в единственной выведите <SPAN class="tex-font-style-bf">-1</SPAN>.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Примеры</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Входные данные</DIV><PRE class="content">
+0 0 1 2
+</PRE></DIV><DIV class="output"><DIV class="title">Выходные данные</DIV><PRE class="content">
+1
+1 2
+</PRE></DIV><DIV class="input"><DIV class="title">Входные данные</DIV><PRE class="content">
+3 4 2 5
+</PRE></DIV><DIV class="output"><DIV class="title">Выходные данные</DIV><PRE class="content">
+1
+2 5
+</PRE></DIV><DIV class="input"><DIV class="title">Входные данные</DIV><PRE class="content">
+0 0 3 3
+</PRE></DIV><DIV class="output"><DIV class="title">Выходные данные</DIV><PRE class="content">
+-1</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Примечание</DIV><P></P><P>Ваше решение наберет не менее 12 баллов, если вы верно определите все случаи, когда попасть в клетку невозможно.</P><P>Ваше решение наберет не менее 34 баллов, если вы верно решите задачу, когда гарантируется, что ответ достижим за не более чем 1 передвижение фигурой.</P><P>Ваше решение наберет не менее 38 баллов, если вы верно решите задачу для $$$-100 \leq X_1, Y_1, X_2, Y_2 \leq 100$$$.</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

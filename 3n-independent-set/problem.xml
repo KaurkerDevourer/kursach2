@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="40" short-name="3n-independent-set" url="https://polygon.codeforces.com/p2Y2Y60/ch_egor/3n-independent-set">
+        
+    <names>
+                
+        <name language="russian" value="Трудная задача"/>
+            
+    </names>
+        
+    <statements>
+                
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+                
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+            
+    </statements>
+        
+    <tutorials>
+                
+        <tutorial charset="UTF-8" language="russian" mathjax="true" path="statements/russian/tutorial.tex" type="application/x-tex"/>
+                
+        <tutorial charset="UTF-8" language="russian" mathjax="true" path="statements/.html/russian/tutorial.html" type="text/html"/>
+                
+        <tutorial language="russian" path="statements/.pdf/russian/tutorial.pdf" type="application/pdf"/>
+            
+    </tutorials>
+        
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+                
+        <testset name="tests">
+                        
+            <time-limit>1000</time-limit>
+                        
+            <memory-limit>536870912</memory-limit>
+                        
+            <test-count>57</test-count>
+                        
+            <input-path-pattern>tests/%02d</input-path-pattern>
+                        
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+                        
+            <tests>
+                                
+                <test description="Заметим, что нам нужно взять всего 1 хулигана, поэтому им может быть любой." method="manual" sample="true"/>
+                                
+                <test description="В данном случае из четверки хулиганов мы можем взять только одного, так как они все подрались между собой(1). Из оставшихся берем любого(5)." method="manual" sample="true"/>
+                                
+                <test cmd="gen_triple 1" method="generated"/>
+                                
+                <test method="manual"/>
+                                
+                <test method="manual"/>
+                                
+                <test cmd="gen_triple 2" method="generated"/>
+                                
+                <test cmd="gen_triple 3" method="generated"/>
+                                
+                <test cmd="bad_gen 1" method="generated"/>
+                                
+                <test cmd="bad_gen 4" method="generated"/>
+                                
+                <test cmd="bad_gen 8" method="generated"/>
+                                
+                <test cmd="bad_gen 9" method="generated"/>
+                                
+                <test cmd="bad_gen 10" method="generated"/>
+                                
+                <test cmd="cicle_gen 3" method="generated"/>
+                                
+                <test cmd="gen_ezh 5" method="generated"/>
+                                
+                <test cmd="gen_ezh 6" method="generated"/>
+                                
+                <test cmd="gen_wa_for_multiple_dec 1" method="generated"/>
+                                
+                <test cmd="gen_wa_for_multiple_dec 2" method="generated"/>
+                                
+                <test cmd="gen_wa_for_multiple_dec 3" method="generated"/>
+                                
+                <test cmd="gen_wa_for_multiple_dec 10" method="generated"/>
+                                
+                <test cmd="gen_wa_for_multiple_dec 50" method="generated"/>
+                                
+                <test cmd="gen_wa_for_multiple_dec 100" method="generated"/>
+                                
+                <test cmd="gen_wa_for_multiple_dec 150" method="generated"/>
+                                
+                <test cmd="gen_wa_for_multiple_dec 182" method="generated"/>
+                                
+                <test cmd="gen_ezh 5000" method="generated"/>
+                                
+                <test cmd="gen_ezh 30000" method="generated"/>
+                                
+                <test cmd="gen_ezh 50000" method="generated"/>
+                                
+                <test cmd="gen_ezh 75000" method="generated"/>
+                                
+                <test cmd="gen_ezh 99999" method="generated"/>
+                                
+                <test cmd="gen_ezh 100000" method="generated"/>
+                                
+                <test cmd="cicle_gen 100000" method="generated"/>
+                                
+                <test cmd="cicle_gen 99999" method="generated"/>
+                                
+                <test cmd="cicle_gen 81239" method="generated"/>
+                                
+                <test cmd="cicle_gen 98394" method="generated"/>
+                                
+                <test cmd="gen_triple 10000" method="generated"/>
+                                
+                <test cmd="gen_triple 25000" method="generated"/>
+                                
+                <test cmd="gen_triple 100000" method="generated"/>
+                                
+                <test cmd="gen_triple 99999" method="generated"/>
+                                
+                <test cmd="gen_triple 98304" method="generated"/>
+                                
+                <test cmd="bad_gen 25000" method="generated"/>
+                                
+                <test cmd="bad_gen 39000" method="generated"/>
+                                
+                <test cmd="bad_gen 98304" method="generated"/>
+                                
+                <test cmd="bad_gen 100000" method="generated"/>
+                                
+                <test cmd="bad_gen 99999" method="generated"/>
+                                
+                <test cmd="one_graph_gen 7541" method="generated"/>
+                                
+                <test cmd="one_graph_gen 10000" method="generated"/>
+                                
+                <test cmd="one_graph_gen 15000" method="generated"/>
+                                
+                <test cmd="one_graph_gen 50000" method="generated"/>
+                                
+                <test cmd="one_graph_gen 100000" method="generated"/>
+                                
+                <test cmd="one_graph_gen 99999" method="generated"/>
+                                
+                <test cmd="one_graph_gen 83819" method="generated"/>
+                                
+                <test cmd="triple_ezh_gen 86000" method="generated"/>
+                                
+                <test cmd="triple_ezh_gen 50000" method="generated"/>
+                                
+                <test cmd="double_ezh_gen 99999" method="generated"/>
+                                
+                <test cmd="triple_ezh_gen 100000" method="generated"/>
+                                
+                <test cmd="double_ezh_gen 75000" method="generated"/>
+                                
+                <test cmd="triple_ezh_gen 99999" method="generated"/>
+                                
+                <test cmd="double_ezh_gen 100000" method="generated"/>
+                            
+            </tests>
+                    
+        </testset>
+            
+    </judging>
+        
+    <files>
+                
+        <resources>
+                        
+            <file path="files/olymp.sty"/>
+                        
+            <file path="files/problem.tex"/>
+                        
+            <file path="files/statements.ftl"/>
+                        
+            <file path="files/testlib.h" type="h.g++"/>
+                        
+            <file path="files/tutorial.tex"/>
+                    
+        </resources>
+                
+        <executables>
+                        
+            <executable>
+                                
+                <source path="files/bad_gen.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/bad_gen.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/checker.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/checker.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/cicle_gen.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/cicle_gen.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/double_ezh_gen.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/double_ezh_gen.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen_ezh.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/gen_ezh.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen_triple.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/gen_triple.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen_wa_for_multiple_dec.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/gen_wa_for_multiple_dec.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/one_graph_gen.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/one_graph_gen.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/triple_ezh_gen.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/triple_ezh_gen.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/validator.exe" type="exe.win32"/>
+                            
+            </executable>
+                    
+        </executables>
+            
+    </files>
+        
+    <assets>
+                
+        <checker type="testlib">
+                        
+            <source path="files/checker.cpp" type="cpp.g++17"/>
+                        
+            <binary path="check.exe" type="exe.win32"/>
+                        
+            <copy path="check.cpp" type="cpp.g++17"/>
+                        
+            <testset>
+                                
+                <test-count>3</test-count>
+                                
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                                
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                                
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                                
+                <tests>
+                                        
+                    <test verdict="ok"/>
+                                        
+                    <test verdict="wrong-answer"/>
+                                        
+                    <test verdict="wrong-answer"/>
+                                    
+                </tests>
+                            
+            </testset>
+                    
+        </checker>
+                
+        <validators>
+                        
+            <validator>
+                                
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/validator.exe" type="exe.win32"/>
+                                
+                <testset>
+                                        
+                    <test-count>6</test-count>
+                                        
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                                        
+                    <tests>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                            
+                    </tests>
+                                    
+                </testset>
+                            
+            </validator>
+                    
+        </validators>
+                
+        <solutions>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/ec_n2_multiremove.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/ec_n2_multiremove.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="accepted">
+                                
+                <source path="solutions/ec_ok.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/ec_ok.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="accepted">
+                                
+                <source path="solutions/no_set_upd_wa.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/no_set_upd_wa.exe" type="exe.win32"/>
+                            
+            </solution>
+                        
+            <solution tag="main">
+                                
+                <source path="solutions/solution.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/solution.exe" type="exe.win32"/>
+                            
+            </solution>
+                    
+        </solutions>
+            
+    </assets>
+        
+    <properties>
+                
+        <property name="tests-wellformed" value="true"/>
+            
+    </properties>
+        
+    <stresses>
+                
+        <stress-count>0</stress-count>
+                
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+                
+        <list/>
+            
+    </stresses>
+        
+    <tags>
+                
+        <tag value="constructive algorithms"/>
+                
+        <tag value="graphs"/>
+                
+        <tag value="greedy"/>
+            
+    </tags>
+    
+</problem>
